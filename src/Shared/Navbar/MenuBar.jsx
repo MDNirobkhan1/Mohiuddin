@@ -70,7 +70,7 @@ const MenuBar = () => {
               </li>
               <li className={` px-pt_8px my-mt_4px hover:cursor-pointer hover:rounded-rounded_primary hover: duration-200  ${selected === '/checkout' ? 'bg-bg_selected rounded-rounded_primary text-white hover:text-white font-medium hover:bg-bg_selected' : 'text-[#585c66] font-medium hover:text-[#585c66] hover:bg-slate-100 '}`}
                 onClick={() => handleClick('/checkout')}>
-                <Link to='/checkout' className="flex items-center gap-gap_6px py-pt_primary">
+                <Link to='' className="flex items-center gap-gap_6px py-pt_primary">
                   <span className="bg-bg_selected text-white p-pl_primary rounded-rounded_primary text-text_md">
                     <MdLibraryBooks />
                   </span>

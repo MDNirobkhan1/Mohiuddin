@@ -69,23 +69,27 @@ const NavbarTop = () => {
             className="text-text_xxl cursor-pointer text-black"
           />
         </div>
+        
         <div className="hidden lg:block"></div>
 
         <div
           className="flex flex-col items-center justify-center text-text_sm font-semibold relative group"
         >
           <div className="flex items-center gap-8">
-          <h1 className="text-blue-500 text-xl font-medium">{userData?.userData.name}</h1>
+            <h1 className="text-blue-500 text-xl font-medium">{userData?.userData.name}</h1>
+            <i className="zmdi zmdi-card text-slate-900 text-4xl"></i>
          {userData?.userData.image ? 
          <img
             className="w-[40px] h-[40px] rounded-full"
             src={`${imgUrl}${userData.userData.image}`}
             alt=""
-          /> : 
+              /> : 
+              
           <FaUserCircle className="w-[40px] h-[40px] rounded-full text-black" />}
           </div>
-
+          
           <div className="absolute top-10 right-3 bg-_white shadow-md rounded-sm overflow-hidden pt-2 w-48 z-10 group-hover:scale-100 transition-transform duration-300 transform origin-top-right scale-0">
+          
             {userData && <Link
               to="/profile"
               className="block px-4 py-2 text-black hover:bg-bg_selected hover:text-white"
