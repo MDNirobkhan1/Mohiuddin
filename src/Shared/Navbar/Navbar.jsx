@@ -8,8 +8,10 @@ import logo from '../../assets/Logo/logo.jpg'
 import companyProfile from "../../assets/companyProfile.pdf"
 
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+ 
 
   useEffect(() => {
     const handleResize = () => {
